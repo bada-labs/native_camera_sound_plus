@@ -1,0 +1,33 @@
+name: native_camera_sound_plus
+description: >-
+  Plays the system camera shutter and video recording sounds on Android and
+  iOS. A maintained successor of native_camera_sound.
+version: 1.0.0
+repository: https://github.com/bada-labs/native_camera_sound_plus
+issue_tracker: https://github.com/bada-labs/native_camera_sound_plus/issues
+topics:
+  - camera
+  - sound
+  - shutter
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ">=5.0.0 <7.0.0"
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.badalabs.native_camera_sound_plus
+        pluginClass: NativeCameraSoundPlusPlugin
+      ios:
+        pluginClass: NativeCameraSoundPlusPlugin
